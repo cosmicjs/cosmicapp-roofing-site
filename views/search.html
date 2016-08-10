@@ -1,0 +1,36 @@
+{{> header }}
+  <main id="main">
+    <div class="container mb-40">
+      <h1>{{ page.title }}</h1>
+      <div>
+        <form class="relative">
+          <input name="q" type="text" class="form-control" value="{{ q }}" placeholder="Enter search terms">
+          <i style="right: 12px; top: 8px; color: #ccc" class="fa fa-search absolute font-24 pointer"></i>
+        </form>
+      </div>
+      {{# q }}
+        <div>Search results for <b>{{ q }}</b></div>
+      {{/ q }}
+      {{{ page.content }}}
+      <div>
+        {{# search_results }}
+          <div class="mb-40">
+            <div class="mb-20">
+              <a href="{{ permalink }}">
+                <h3>{{ title }}</h3>
+              </a>
+            </div>
+            <div>
+              {{ teaser }}...
+            </div>
+            <div>
+              <a href="{{ permalink }}">
+                Read more
+              </a>
+            </div>
+          </div>
+        {{/ search_results }}
+      </div>
+    </div>
+  </main>
+{{> footer }}
