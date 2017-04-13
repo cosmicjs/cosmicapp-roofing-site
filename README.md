@@ -1,6 +1,6 @@
-#A Roofing Website
+# A Roofing Website
 This is a website for a roofing company based off of the [Node.js Website Boilerplate](https://github.com/cosmicjs/nodejs-website-boilerplate) which satisfies some basic use cases like dynamic pages, blog and contact form.
-##Features
+## Features
 1. Fully responsive down to mobile w/ Bootstrap<br />
 2. SEO ready<br />
 3. A contact form that sends an email to your email(s) of choice and to Cosmic JS for easy reference<br />
@@ -9,7 +9,7 @@ This is a website for a roofing company based off of the [Node.js Website Boiler
 
 Sign up at [https://cosmicjs.com](Cosmic JS) to install this app with demo content to begin.
 
-###Get started
+### Get started
 ```
 npm install
 ```
@@ -18,7 +18,7 @@ Then run
 COSMIC_BUCKET=your-bucket-slug npm start
 ```
 Go to [http://localhost:3000](http://localhost:3000) in your browser of choice.
-###Run in development
+### Run in development
 ```
 npm run development
 ```
